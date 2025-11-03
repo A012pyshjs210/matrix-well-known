@@ -805,7 +805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@miniflare/core@npm:2.14.1, @miniflare/core@npm:^2.14.1":
+"@miniflare/core@npm:2.14.1":
   version: 2.14.1
   resolution: "@miniflare/core@npm:2.14.1"
   dependencies:
@@ -820,6 +820,24 @@ __metadata:
     undici: 5.20.0
     urlpattern-polyfill: ^4.0.3
   checksum: c240802558153b00b17f6bc7ba036fc874d757fbb6cfb82a645d6f646d9456a492366b33005187ee9e5fec32ed03f1a55cd3369214f23d3be4dff62d4a9a4e23
+  languageName: node
+  linkType: hard
+
+"@miniflare/core@npm:^2.14.4":
+  version: 2.14.4
+  resolution: "@miniflare/core@npm:2.14.4"
+  dependencies:
+    "@iarna/toml": ^2.2.5
+    "@miniflare/queues": 2.14.4
+    "@miniflare/shared": 2.14.4
+    "@miniflare/watcher": 2.14.4
+    busboy: ^1.6.0
+    dotenv: ^10.0.0
+    kleur: ^4.1.4
+    set-cookie-parser: ^2.4.8
+    undici: 5.28.4
+    urlpattern-polyfill: ^4.0.3
+  checksum: c479b04dfcebddd04854ccb8b7089a0317faf077c1c5d7eea3e3518e73126e5bac2ac60a3784d06ec8a412a959e5139f216e6aa4c05bf3dd1b8b06b3c9912a9a
   languageName: node
   linkType: hard
 
@@ -872,6 +890,15 @@ __metadata:
   dependencies:
     "@miniflare/shared": 2.14.1
   checksum: 624c43bda3cc33133de7a24f23cc9e2c7f2fa2ac762c22b00bcd01b683ca2cc7e9784e4523e61fc34c4fe00e09f949a31ef92a88780880dabdca0b5f749e9a5b
+  languageName: node
+  linkType: hard
+
+"@miniflare/queues@npm:2.14.4":
+  version: 2.14.4
+  resolution: "@miniflare/queues@npm:2.14.4"
+  dependencies:
+    "@miniflare/shared": 2.14.4
+  checksum: b4a163cb1270f635dda8437b136425dc048a920cd3934fd3c795a227d983f44e86f19bc7f533210b80083151a3e7345fce73ad9385e0d847c88a81638d99fb55
   languageName: node
   linkType: hard
 
@@ -928,6 +955,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@miniflare/shared@npm:2.14.4":
+  version: 2.14.4
+  resolution: "@miniflare/shared@npm:2.14.4"
+  dependencies:
+    "@types/better-sqlite3": ^7.6.0
+    kleur: ^4.1.4
+    npx-import: ^1.1.4
+    picomatch: ^2.3.1
+  checksum: df96dc6196ec9e5d667b571e6ec018c2f5ddd1f476ba8e33aa5dff9410086f752f4642a8897cffd6f2fed956f00a8d22d843d5f96750b4e09271edbace06686b
+  languageName: node
+  linkType: hard
+
 "@miniflare/sites@npm:2.14.1":
   version: 2.14.1
   resolution: "@miniflare/sites@npm:2.14.1"
@@ -964,6 +1003,15 @@ __metadata:
   dependencies:
     "@miniflare/shared": 2.14.1
   checksum: 6f71bdd1c54a1b5a3585e3513806e0acf72725507ca88ef07b5a489c52e2e8af712f796bfcccabd0744fd059672aa98f49dd8895199e6f72b0329c01f1917626
+  languageName: node
+  linkType: hard
+
+"@miniflare/watcher@npm:2.14.4":
+  version: 2.14.4
+  resolution: "@miniflare/watcher@npm:2.14.4"
+  dependencies:
+    "@miniflare/shared": 2.14.4
+  checksum: 35a1302f9dca2fc1f6a144f0043721fb0371837a16be40bd1e6986305b99c40c7699581753b5d653a2dedb916f9cd4b629d0579a0834d5dd5cd45231ab199b90
   languageName: node
   linkType: hard
 
@@ -2131,33 +2179,6 @@ __metadata:
   checksum: d06418b7335897209e77bdd430d04f882189582e67bd1f75a04565f3f07f5b3f119a9d670c943b6697d0afb100f03b866b3b8a1f91d4d02d72c4ecf2bb64b5dd
   languageName: node
   linkType: hard
-
-"cloudflare-worker-matrix-well-known@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "cloudflare-worker-matrix-well-known@workspace:."
-  dependencies:
-    "@cloudflare/workers-types": ^4.20230518.0
-    "@esbuild-plugins/node-modules-polyfill": ^0.2.2
-    "@miniflare/core": ^2.14.1
-    "@types/eslint": ^8
-    "@typescript-eslint/eslint-plugin": ^5.59.8
-    commitizen: ^4.3.0
-    cz-conventional-changelog: ^3.3.0
-    esbuild: ^0.17.19
-    eslint: ^8.47.0
-    eslint-config-standard-with-typescript: latest
-    eslint-plugin-import: ^2.28.1
-    eslint-plugin-n: ^16.2.0
-    eslint-plugin-promise: ^6.1.1
-    itty-router: v4.0.14
-    miniflare: ^3.20231218.2
-    typescript: "*"
-    vite: ^5.4.2
-    vitest: ^1.0.4
-    vitest-environment-miniflare: ^2.14.1
-    wrangler: ^3.19.0
-  languageName: unknown
-  linkType: soft
 
 "color-convert@npm:^1.9.0":
   version: 1.9.3
@@ -4445,6 +4466,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"matrix-well-known@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "matrix-well-known@workspace:."
+  dependencies:
+    "@cloudflare/workers-types": ^4.20230518.0
+    "@esbuild-plugins/node-modules-polyfill": ^0.2.2
+    "@miniflare/core": ^2.14.4
+    "@types/eslint": ^8
+    "@typescript-eslint/eslint-plugin": ^5.59.8
+    commitizen: ^4.3.0
+    cz-conventional-changelog: ^3.3.0
+    esbuild: ^0.17.19
+    eslint: ^8.47.0
+    eslint-config-standard-with-typescript: latest
+    eslint-plugin-import: ^2.28.1
+    eslint-plugin-n: ^16.2.0
+    eslint-plugin-promise: ^6.1.1
+    itty-router: v4.0.14
+    miniflare: ^3.20231218.2
+    typescript: "*"
+    vite: ^5.4.2
+    vitest: ^1.0.4
+    vitest-environment-miniflare: ^2.14.1
+    wrangler: ^3.19.0
+  languageName: unknown
+  linkType: soft
+
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -6230,6 +6278,15 @@ __metadata:
   dependencies:
     busboy: ^1.6.0
   checksum: 25412a785b2bd0b12f0bb0ec47ef00aa7a611ca0e570cb7af97cffe6a42e0d78e4b15190363a43771e9002defc3c6647c1b2d52201b3f64e2196819db4d150d3
+  languageName: node
+  linkType: hard
+
+"undici@npm:5.28.4":
+  version: 5.28.4
+  resolution: "undici@npm:5.28.4"
+  dependencies:
+    "@fastify/busboy": ^2.0.0
+  checksum: a8193132d84540e4dc1895ecc8dbaa176e8a49d26084d6fbe48a292e28397cd19ec5d13bc13e604484e76f94f6e334b2bdc740d5f06a6e50c44072818d0c19f9
   languageName: node
   linkType: hard
 
